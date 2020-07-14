@@ -6,7 +6,7 @@
 .issueHeader {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid red;
 }
 
 .issueHeader span {
@@ -79,12 +79,15 @@
 }
 
 .issueGetDigital {
+    display: flex;
+    justify-content: center;
     background: none;
     border: 2px solid yellow;
     color: yellow;
     width: 100%;
     font-size: 25px;
     font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
     padding: 28px 0;
 }
 
@@ -111,4 +114,54 @@
 
 .toolsHeader span {
     color: red;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.desktopOnly {
+    display: inherit;
+}
+
+@media (max-width: 950px) {
+    .issueDetails {
+        flex-wrap: wrap;
+    }
+
+    .issueDetails > * {
+        width: 100%;
+    }
+
+    .issueImg {
+        height: 50vh;
+    }
+
+    #imgSuperimposed {
+        height: 100%;
+        width: 100%;
+    }
+
+    .issueItem {
+        text-align: left;
+    }
+
+    .centerFlexTextMobile {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .issueTools {
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+
+    .mobileOnly {
+        display: inherit;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
 }

@@ -12,6 +12,23 @@
 
 .toolAccess {
     background: none;
-    border: 2px solid yellow;
-    color: yellow;
+    border: 2px solid #ffea00;
+    color: #ffea00;
+    padding: 15px 0;
+
+    /* TODO - NOT SURE IF THIS IS MOBILEONLY SIZING */
+    font-size: 15px;
+    font-weight: bold;
+    width: 135px;
+}
+
+@media (max-width: 950px) {
+    .Tool {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .Tool span {
+        margin: 25px 10%;
+    }
 }
