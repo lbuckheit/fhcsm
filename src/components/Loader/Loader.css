@@ -1,0 +1,48 @@
+.Loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s ease;
+}
+
+.loaderContent {
+    transition: all 1.5s ease;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loaderContent span {
+    margin: 0;
+}
+
+.redText {
+    color: red;
+}
+
+.hidden {
+    opacity: 0;
+    transition-delay: 1.5s;
+}
+
+.gradientBg {
+    background: linear-gradient(180deg,#18a7e5,#18a7e5 35%,#ff0400 60.5%,#ffc800 0,#ffc800);
+    width: 300%;
+    height: 300%;
+    transform-origin: center center;
+    transition: all 1.5s ease-out;
+    position: absolute;
+}
+
+.Loader.rotate .gradientBg {
+    transform: rotate(180deg);
+}
