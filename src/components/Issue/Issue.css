@@ -1,1 +1,114 @@
-.Issue {}
+.Issue {
+    background: black;
+    padding: 0 10%;
+}
+
+.issueHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid red;
+}
+
+.issueHeader span {
+    color: red;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+}
+
+.issueImg {
+    justify-content: space-around;
+}
+
+.issueDetails {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    margin: 75px 5% 0 5%;
+    min-height: 300px;
+}
+
+#imgSuperimposed {
+    position: relative;
+    height: 25%;
+    width: 75%;
+}
+
+#issue01gif {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#issue01static {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blueGlow {
+    box-shadow: 0 0 70px #0019ff;
+}
+
+.issueDetails > * {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.issueBullets {
+    align-items: flex-start;
+}
+
+.issueTitle {
+    margin-bottom: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.issueItem {
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: unset;
+    margin-bottom: 24px;
+}
+
+.issueGetDigital {
+    background: none;
+    border: 2px solid yellow;
+    color: yellow;
+    width: 100%;
+    font-size: 25px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 28px 0;
+}
+
+.issueTools {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+    padding: 50px 5%;
+    margin: 50px 5% 0 5%;
+}
+
+.toolsHeader {
+    background: black;
+    position: absolute;
+    height: 50px;
+    width: 255px;
+    padding: 0 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.toolsHeader span {
+    color: red;
+}
