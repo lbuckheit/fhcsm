@@ -20,6 +20,7 @@
     font-size: 15px;
     font-weight: bold;
     width: 135px;
+    cursor: pointer;
 }
 
 @media (max-width: 950px) {

@@ -18,14 +18,14 @@ const Issue = () => (
         </div>
         <div className="issueBullets">
             <span className="issueTitle">MSCHF MAG VOL 01: BREAD</span>
-            <button className="issueGetDigital mobileOnly">GET FREE DIGITAL COPY</button>
+            <button className="issueGetDigital mobileOnly hoverRed">GET FREE DIGITAL COPY</button>
             <span className="issueItem centerFlexTextMobile">56 Pages, Glossy</span>
             <span className="issueItem centerFlexTextMobile">8.25" x 5.25"</span>
             <span className="issueItem bullet">Scam corporate billing departments</span>
             <span className="issueItem bullet">Use Spotify to generate UBI</span>
             <span className="issueItem bullet">Break traffic laws - legally</span>
             <span className="issueItem xMark">PRINT VERSION SOLD OUT</span>
-            <button className="issueGetDigital desktopOnly">GET FREE DIGITAL COPY</button>
+            <button className="issueGetDigital desktopOnly hoverRed">GET FREE DIGITAL COPY</button>
         </div>
     </div>
     <div className="issueTools">

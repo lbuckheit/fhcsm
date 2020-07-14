@@ -89,6 +89,7 @@
     font-family: "Lucida Console", Monaco, monospace;
     text-align: center;
     padding: 28px 0;
+    cursor: pointer;
 }
 
 .issueTools {
@@ -110,6 +111,7 @@
     transform: translateX(-50%);
     top: -30px;
     font-family: "Lucida Console", Monaco, monospace;
+    max-width: 66%;
 }
 
 .toolsHeader span {

@@ -6,7 +6,7 @@ const Tool = (props) => (
   <div className="Tool">
     <img src={`${process.env.PUBLIC_URL}/${props.imgSrc}`} />
     <span>{props.title}</span>
-    <button className="toolAccess">ACCESS</button>
+    <button className="toolAccess hoverRed">ACCESS</button>
   </div>
 );
 
