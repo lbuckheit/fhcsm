@@ -40,7 +40,7 @@
 
 #issue01gif {
     width: 100%;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -83,11 +83,26 @@
 }
 
 .issueItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: white;
     font-family: "MonumentGrotesk";
     text-align: unset;
     margin-bottom: 24px;
     font-size: 25px;
+}
+
+.bullet {
+    text-align: left;
+}
+
+.bullet::before {
+    content: url('../../svgs/yellowStar.svg');
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    margin-right: 20px;
 }
 
 .issueItem:last-of-type {
@@ -112,8 +127,8 @@
     width: 100%;
     font-size: 25px;
     font-family: "MonumentGroteskMono";
-    text-align: center;
-    padding: 28px 0;
+    text-align: left;
+    padding: 15px 10px;
     cursor: pointer;
 }
 
@@ -123,7 +138,8 @@
     justify-content: space-around;
     border: 2px solid red;
     padding: 50px 5%;
-    margin: 50px 0 0 0;
+    margin: 50px auto 0 auto;
+    max-width: 1440px;
 }
 
 .toolsHeader {
@@ -160,6 +176,7 @@
 
     .issueDetails {
         flex-wrap: wrap;
+        margin-top: 0;
     }
 
     .issueDetails > * {
@@ -167,8 +184,9 @@
     }
 
     .issueImg {
-        height: 40vh;
+        margin-top: unset;
         justify-content: flex-start;
+        padding: 9vw 0 7vw;
     }
 
     #imgSuperimposed {
@@ -189,11 +207,13 @@
         text-align: left;
         margin-top: 0;
         margin-bottom: 24px;
+        padding: 0 5%;
     }
 
     .issueGetDigital {
         margin: 30px 0;
         padding: 20px 50px;
+        text-align: center;
     }
 
     .centerFlexTextMobile {
@@ -202,6 +222,7 @@
         text-align: center;
         margin-left: 0;
         margin-right: 0;
+        padding: 0;
     }
 
     .toolsHeader {

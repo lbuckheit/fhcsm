@@ -30,7 +30,8 @@ const Issue = () => (
     </div>
     <div className="issueTools">
         <div className="toolsHeader">
-            <span>TOOLS FOR VOLUME 01</span>
+            <span className="desktopOnly">TOOLS FOR VOL. 01</span>
+            <span className="mobileOnly">TOOLS FOR VOLUME 01</span>
         </div>
         <Tool title="10 Second Consulting" imgSrc="shh.png"></Tool>
         <Tool title="MPFREE" imgSrc="mpfree.png"></Tool>
