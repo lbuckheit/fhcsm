@@ -87,6 +87,7 @@
     font-family: "MonumentGrotesk";
     text-align: unset;
     margin-bottom: 24px;
+    font-size: 25px;
 }
 
 .issueItem:last-of-type {

@@ -24,9 +24,11 @@
 .loaderContent span {
     margin: 0;
     font-family: "AndaleMono";
+    color: white;
+    font-size: 1.5rem;
 }
 
-.redText {
+.loaderContent .redText {
     color: red;
 }
 
