@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import smoothscroll from 'smoothscroll-polyfill';
 import './Header.css';
+
+smoothscroll.polyfill();
 
 const Header = () => {
     function scrollToIssue(type) {
