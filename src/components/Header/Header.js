@@ -10,7 +10,7 @@ const Header = () => (
         <img id="animatedWordmarkHero" src={`${process.env.PUBLIC_URL}/animatedWordmark.png`} />
     </div>
     {/* TODO - USE THE ACTUAL ASTERISK ASSET */}
-    <button id="toLatestDesktop" className="desktopOnly">*GET LATEST VOLUME</button>
+    <button id="toLatestDesktop" className="desktopOnly">GET LATEST VOLUME</button>
     <button id="toLatestMobile" className="mobileOnly hoverRed">GET VOLUME 1: BREAD</button>
   </div>
 );

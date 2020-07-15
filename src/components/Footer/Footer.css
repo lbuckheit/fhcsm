@@ -12,16 +12,16 @@
 .Footer span {
     font-size: 25px;
     color: white;
-    margin: 15px 5%;
+    margin: 0 5%;
     font-family: "MonumentGrotesk";
 }
 
 .Footer span:first-of-type {
-    margin-top: 75px;
+    margin-top: 150px;
 }
 
 .Footer span:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .downloadButton {
@@ -44,6 +44,18 @@
 }
 
 @media (max-width: 600px) {
+    .Footer span {
+        margin: 15px 5%;
+    }
+
+    .Footer span:first-of-type {
+        margin-top: 75px;
+    }
+    
+    .Footer span:last-of-type {
+        margin-bottom: 50px;
+    }
+
     .downloadButton {
         height: 70px;
         line-height: 70px;

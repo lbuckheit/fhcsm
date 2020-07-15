@@ -1,6 +1,6 @@
 .Issue {
     background: black;
-    padding: 0 7.5%;
+    padding: 0 12.5%;
 }
 
 .issueHeader {
@@ -12,7 +12,8 @@
 .issueHeader span {
     margin: 10px 0;
     color: red;
-    font-family: "MonumentGroteskMono"
+    font-family: "MonumentGroteskMono";
+    font-size: 30px;
 }
 
 .issueHeader span:last-of-type {
@@ -28,14 +29,13 @@
     display: flex;
     justify-content: space-between;
     height: 80%;
-    margin: 75px 5% 0 5%;
+    margin: 75px 2.5% 0 2.5%;
     min-height: 300px;
 }
 
 #imgSuperimposed {
     position: relative;
-    height: 25%;
-    width: 75%;
+    width: 100%;
 }
 
 #issue01gif {
@@ -58,15 +58,19 @@
 }
 
 .issueDetails > * {
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-between;
+}
+
+.issueImg {
+    width: 55%;
 }
 
 .issueBullets {
     align-items: flex-start;
+    width: 40%
 }
 
 .issueTitle {
@@ -74,6 +78,8 @@
     font-family: "MonumentExtended";
     font-size: 35px;
     font-weight: bold;
+    color: white;
+    text-align: left;
 }
 
 .issueItem {
@@ -85,6 +91,15 @@
 
 .issueItem:last-of-type {
     font-family: "MonumentGroteskMono";
+}
+
+.issueItem:last-of-type::before {
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    margin-right: 20px;
+    margin-top: 5px;
+    content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjJweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjIgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+4piSPC90aXRsZT4KICAgIDxnIGlkPSJNU0NIRi1NYWctU2l0ZS1EZXNpZ24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZvbnQtZmFtaWx5PSJBcHBsZVN5bWJvbHMsIEFwcGxlIFN5bWJvbHMiIGZvbnQtc2l6ZT0iMzcuNSIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+CiAgICAgICAgPGcgaWQ9IkRlc2t0b3AtfC1Ib21lcGFnZS1bTGF1bmNoLVN0YXRlXSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc3MS4wMDAwMDAsIC0xNDQ2LjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8ZyBpZD0iTEFURVNULVZPTFVNRSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYzLjAwMDAwMCwgODczLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9IkN1cnJlbnQtaXNzdWUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY4LjAwMDAwMCwgMTYxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJDT1BZIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzEuMDAwMDAwLCAxNC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHRleHQgaWQ9IuKYkiI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHNwYW4geD0iNS40MzYwMzUxNiIgeT0iNDE5Ij7imJI8L3RzcGFuPgogICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
 }
 
 .issueGetDigital {
@@ -107,24 +122,25 @@
     justify-content: space-around;
     border: 2px solid red;
     padding: 50px 5%;
-    margin: 50px 5% 0 5%;
+    margin: 50px 0 0 0;
 }
 
 .toolsHeader {
     background: black;
     position: absolute;
     height: 50px;
-    width: 255px;
+    width: 275px;
     padding: 0 15px;
     left: 50%;
     transform: translateX(-50%);
-    top: -30px;
-    max-width: 66%;
+    top: -15px;
+    max-width: 55%;
 }
 
 .toolsHeader span {
     font-family: "MonumentGroteskMono";
     color: red;
+    font-size: 25px;
 }
 
 .mobileOnly {
@@ -136,10 +152,13 @@
 }
 
 @media (max-width: 950px) {
+    .Issue {
+        background: black;
+        padding: 0 7.5%;
+    }
+
     .issueDetails {
         flex-wrap: wrap;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
     }
 
     .issueDetails > * {
@@ -147,7 +166,7 @@
     }
 
     .issueImg {
-        height: 50vh;
+        height: 40vh;
         justify-content: flex-start;
     }
 
@@ -156,8 +175,13 @@
         height: auto;
     }
 
+    .issueHeader span {
+        font-size: 25px;
+    }
+
     .issueTitle {
         margin: 0;
+        text-align: unset;
     }
 
     .issueItem {
@@ -179,9 +203,19 @@
         margin-right: 0;
     }
 
+    .toolsHeader {
+        width: 255px;
+        margin-top: -20px;
+    }
+
+    .toolsHeader span {
+        /* font-size: unset; */
+    }
+
     .issueTools {
         flex-wrap: wrap;
         padding: 10%;
+        margin: 50px 5% 0 5%;
     }
 
     .mobileOnly {

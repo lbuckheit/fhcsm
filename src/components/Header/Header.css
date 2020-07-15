@@ -1,7 +1,7 @@
 .Header {
     position: relative;
     width: 100%;
-    height: calc(100vh - 54px);
+    height: 100vh;
 }
 
 #starsBg {
@@ -54,6 +54,15 @@
     font-family: "MonumentGroteskMono";
 }
 
+#toLatestDesktop::before {
+    content: url("/public/redStar.svg");
+    display: block;
+    height: 34px;
+    width: 34px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
 #toLatestMobile {
     position: absolute;
     background-color: unset;
@@ -79,6 +88,10 @@
 }
 
 @media (max-width: 950px) {
+    .Header {
+        height: calc(100vh - 54px);
+    }
+
     #breadWordmark {
         width: 100vw;
         height: calc(100vh - 40px);
