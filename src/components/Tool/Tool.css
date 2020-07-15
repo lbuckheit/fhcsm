@@ -8,6 +8,7 @@
 
 .Tool span {
     color: white;
+    font-family: "MonumentGrotesk";
 }
 
 .toolAccess {
@@ -15,6 +16,7 @@
     border: 2px solid #ffea00;
     color: #ffea00;
     padding: 15px 0;
+    font-family: "MonumentGroteskMono";
 
     /* TODO - NOT SURE IF THIS IS MOBILEONLY SIZING */
     font-size: 15px;

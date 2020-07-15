@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/MonumentExtended.otf';
+import './fonts/AndaleMono.ttf';
+import './fonts/MonumentGrotesk.otf';
+import './fonts/MonumentGroteskMono.otf';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -46,12 +46,12 @@
     border: 0;
     bottom: 5%;
     width: 350px;
-    /* TODO - PERHAPS A BETTER WAY OF DOING THIS ABSOLUTE CENTERING */
     left: 50%;
     transform: translateX(-50%);
     color: red;
     font-size: 25px;
     cursor: pointer;
+    font-family: "MonumentGroteskMono";
 }
 
 #toLatestMobile {
@@ -65,7 +65,8 @@
     bottom: 50px;
     width: 90vw;
     font-size: 25px;
-    font-family: "Lucida Console", Monaco, monospace;
+    /* font-family: "Lucida Console", Monaco, monospace; */
+    font-family: "MonumentGroteskMono";
     cursor: pointer;
 }
 

@@ -13,6 +13,7 @@ span {
     font-size: 25px;
     color: white;
     margin: 25px 5%;
+    font-family: "MonumentGrotesk";
 }
 
 .downloadButton {
@@ -25,7 +26,7 @@ span {
     text-align: center;
     cursor: pointer;
     margin: 2vw;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "MonumentGroteskMono";
     font-size: 25px;
 }
 

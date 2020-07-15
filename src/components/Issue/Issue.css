@@ -11,8 +11,12 @@
 
 .issueHeader span {
     color: red;
-    font-family: "Lucida Console", Monaco, monospace;
     font-weight: bold;
+    font-family: "MonumentGroteskMono"
+}
+
+.issueHeader span:last-of-type {
+    font-family: "MonumentExtended"
 }
 
 .issueImg {
@@ -66,16 +70,20 @@
 
 .issueTitle {
     margin-bottom: 35px;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "MonumentExtended";
     font-size: 40px;
     font-weight: bold;
 }
 
 .issueItem {
     color: white;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "MonumentGrotesk";
     text-align: unset;
     margin-bottom: 24px;
+}
+
+.issueItem:last-of-type {
+    font-family: "MonumentGroteskMono";
 }
 
 .issueGetDigital {
@@ -86,7 +94,7 @@
     color: yellow;
     width: 100%;
     font-size: 25px;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "MonumentGroteskMono";
     text-align: center;
     padding: 28px 0;
     cursor: pointer;
@@ -110,11 +118,11 @@
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-    font-family: "Lucida Console", Monaco, monospace;
     max-width: 66%;
 }
 
 .toolsHeader span {
+    font-family: "MonumentGroteskMono";
     color: red;
 }
 

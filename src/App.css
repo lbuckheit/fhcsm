@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media (hover: hover) {
     .hoverRed:hover {
         border-color: red;
