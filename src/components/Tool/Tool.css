@@ -19,7 +19,7 @@
     font-family: "MonumentGroteskMono";
 
     /* TODO - NOT SURE IF THIS IS MOBILEONLY SIZING */
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     width: 135px;
     cursor: pointer;
@@ -28,7 +28,7 @@
 @media (max-width: 950px) {
     .Tool {
         width: 100%;
-        margin: 20px 0;
+        margin: 30px 0;
     }
 
     .Tool span {

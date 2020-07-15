@@ -9,11 +9,19 @@
     align-items: center;
 }
 
-span {
+.Footer span {
     font-size: 25px;
     color: white;
-    margin: 25px 5%;
+    margin: 15px 5%;
     font-family: "MonumentGrotesk";
+}
+
+.Footer span:first-of-type {
+    margin-top: 75px;
+}
+
+.Footer span:last-of-type {
+    margin-bottom: 50px;
 }
 
 .downloadButton {

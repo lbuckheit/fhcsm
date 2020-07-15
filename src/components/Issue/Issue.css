@@ -1,6 +1,6 @@
 .Issue {
     background: black;
-    padding: 0 10%;
+    padding: 0 7.5%;
 }
 
 .issueHeader {
@@ -10,12 +10,13 @@
 }
 
 .issueHeader span {
+    margin: 10px 0;
     color: red;
-    font-weight: bold;
     font-family: "MonumentGroteskMono"
 }
 
 .issueHeader span:last-of-type {
+    font-weight: bold;
     font-family: "MonumentExtended"
 }
 
@@ -71,7 +72,7 @@
 .issueTitle {
     margin-bottom: 35px;
     font-family: "MonumentExtended";
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -137,6 +138,8 @@
 @media (max-width: 950px) {
     .issueDetails {
         flex-wrap: wrap;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
     .issueDetails > * {
@@ -145,21 +148,35 @@
 
     .issueImg {
         height: 50vh;
+        justify-content: flex-start;
     }
 
     #imgSuperimposed {
-        height: 100%;
         width: 100%;
+        height: auto;
+    }
+
+    .issueTitle {
+        margin: 0;
     }
 
     .issueItem {
         text-align: left;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .issueGetDigital {
+        margin: 30px 0;
+        padding: 20px 50px;
     }
 
     .centerFlexTextMobile {
         display: inline-block;
         width: 100%;
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .issueTools {

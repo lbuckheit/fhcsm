@@ -6,8 +6,8 @@ import './Issue.css';
 const Issue = () => (
   <div className="Issue">
     <div className="issueHeader">
-        <span>Volume 01</span>
-        <span>New!</span>
+        <span>VOLUME 01</span>
+        <span>NEW!</span>
     </div>
     <div className="issueDetails">
         <div className="issueImg">
